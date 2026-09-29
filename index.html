@@ -9,7 +9,7 @@
     <meta property="og:title" content="Marc Gezellig — Voice Artist">
     <meta property="og:description" content="Comédien français spécialisé en doublage. Une voix, plusieurs univers.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="images/marc-gezellig.png">
+    <meta property="og:image" content="images/marc-gezellig-hero.jpg">
     <title>Marc Gezellig — Voice Artist | Comédien doublage & voix off</title>
     <script src="https://cdn.tailwindcss.com/3.4.16"></script>
     <script>
@@ -38,7 +38,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body class="font-sans">
+<body class="font-sans variant-atelier">
 
     <nav class="site-nav fixed top-0 w-full z-50" aria-label="Navigation principale">
         <div class="nav-inner">
@@ -52,7 +52,10 @@
                 <a href="https://www.instagram.com/marcgezellig/" target="_blank" rel="noopener" class="nav-social" aria-label="Instagram Marc Gezellig">
                     <i class="ri-instagram-line" aria-hidden="true"></i>
                 </a>
-                <a href="#jardin" class="nav-cta">Écouter</a>
+                <a href="https://www.castingcall.club/m/marcgezellig" target="_blank" rel="noopener" class="nav-social" aria-label="Casting Call Club">
+                    <i class="ri-mic-2-line" aria-hidden="true"></i>
+                </a>
+                <a href="#demo" class="nav-cta">Écouter</a>
             </div>
             <button id="menuBtn" class="md:hidden menu-btn" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobileMenu">
                 <i class="ri-menu-line ri-lg" aria-hidden="true"></i>
@@ -66,6 +69,12 @@
             <a href="#contact">Contact</a>
             <a href="https://www.instagram.com/marcgezellig/" target="_blank" rel="noopener" class="mobile-ig">
                 <i class="ri-instagram-line" aria-hidden="true"></i> Instagram
+            </a>
+            <a href="https://www.castingcall.club/m/marcgezellig" target="_blank" rel="noopener" class="mobile-ig">
+                <i class="ri-mic-2-line" aria-hidden="true"></i> Casting Call Club
+            </a>
+            <a href="mailto:marcgezellig@gmail.com" class="mobile-ig">
+                <i class="ri-mail-line" aria-hidden="true"></i> marcgezellig@gmail.com
             </a>
         </div>
     </nav>
@@ -95,7 +104,7 @@
         </div>
 
         <div class="hero-content">
-            <p class="hero-kicker">Comédien français spécialisé en doublage.</p>
+            <p class="hero-kicker">Voix off • doublage • interprétation artisanale</p>
             <h1 class="hero-brand font-display">
                 <span class="brand-marc">MARC</span>
                 <span class="brand-gezellig">GEZELLIG</span>
@@ -103,7 +112,7 @@
             <p class="hero-tagline">Une voix, plusieurs univers.</p>
             <p class="hero-subtitle">Voix off • Doublage • Personnages • Narration • Publicité</p>
             <div class="hero-actions">
-                <a href="#jardin" class="btn-primary">
+                <a href="#demo" class="btn-primary">
                     <span class="btn-play" aria-hidden="true">▶</span> Écouter ma voix
                 </a>
                 <a href="#univers" class="btn-secondary">Découvrir mes univers</a>
@@ -112,7 +121,7 @@
 
         <aside class="hero-portrait" aria-label="Portrait de Marc Gezellig">
             <div class="portrait-frame">
-                <img src="images/marc-gezellig.png" alt="Marc Gezellig, comédien voix off" width="640" height="640" fetchpriority="high">
+                <img src="images/marc-gezellig-hero.jpg" alt="Marc Gezellig, comédien voix off" width="900" height="1125" fetchpriority="high">
             </div>
             <div class="portrait-caption">
                 <span class="waveform-mini" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
@@ -124,9 +133,9 @@
     <!-- JARDIN VOCAL -->
     <section id="jardin" class="jardin-section">
         <div class="section-head">
-            <p class="section-eyebrow">Signature</p>
+            <p class="section-eyebrow">Atelier Gezellig</p>
             <h2 class="font-display">Le Jardin vocal de Marc Gezellig</h2>
-            <p class="section-lead">Chaque fleur, une facette de ma voix. Cliquez pour écouter la démo correspondante.</p>
+            <p class="section-lead">Une approche artisanale : étiquettes, papier, formes dessinées à la main et démos traitées comme des échantillons de voix.</p>
         </div>
 
         <div class="jardin-stage" id="jardinStage" role="list">
@@ -260,6 +269,22 @@
         </div>
     </section>
 
+    <!-- DÉMO VOCALE (fichier local uniquement) -->
+    <section id="demo" class="demo-listen" aria-label="Écouter la démo de Marc Gezellig">
+        <div class="demo-listen-card">
+            <button type="button" class="demo-listen-toggle" id="demoToggle" aria-label="Lire la démo">
+                <i class="ri-play-fill" aria-hidden="true"></i>
+            </button>
+            <div class="demo-listen-meta">
+                <p class="demo-listen-title">Écouter ma voix</p>
+                <p class="demo-listen-desc">Démo voix off — Marc Gezellig</p>
+                <div class="audio-progress-track" id="demoTrack"><div class="audio-progress" id="demoProgress"></div></div>
+            </div>
+            <span class="audio-time" id="demoTime">0:00</span>
+            <audio id="demoAudio" preload="metadata" src="audio/demo-marc-gezellig.mp3"></audio>
+        </div>
+    </section>
+
     <!-- UNIVERS -->
     <section id="univers" class="univers-section">
         <div class="section-head">
@@ -300,7 +325,7 @@
     <section id="a-propos" class="about-section">
         <div class="about-grid">
             <div class="about-photo">
-                <img src="images/marc-gezellig.png" alt="Marc Gezellig souriant" width="560" height="560" loading="lazy">
+                <img src="images/marc-gezellig-about.jpg" alt="Marc Gezellig souriant, yeux fermés" width="900" height="1200" loading="lazy">
                 <div class="about-photo-deco" aria-hidden="true"></div>
             </div>
             <div class="about-copy">
@@ -309,10 +334,20 @@
                 <p class="about-identity">Comédien français spécialisé en doublage.</p>
                 <p>Gezellig, c’est cette chaleur néerlandaise : le plaisir d’être ensemble, une voix qui accueille. Derrière le micro, je cultive des univers — du naturel conversationnel au personnage le plus décalé.</p>
                 <p>Mon travail : donner du corps aux histoires, coller au jeu, et laisser une empreinte humaine dans chaque prise.</p>
-                <a href="https://www.instagram.com/marcgezellig/" target="_blank" rel="noopener" class="about-ig">
-                    <i class="ri-instagram-line" aria-hidden="true"></i>
-                    @marcgezellig
-                </a>
+                <div class="about-links">
+                    <a href="https://www.instagram.com/marcgezellig/" target="_blank" rel="noopener" class="about-ig">
+                        <i class="ri-instagram-line" aria-hidden="true"></i>
+                        @marcgezellig
+                    </a>
+                    <a href="https://www.castingcall.club/m/marcgezellig" target="_blank" rel="noopener" class="about-ig">
+                        <i class="ri-mic-2-line" aria-hidden="true"></i>
+                        Casting Call Club
+                    </a>
+                    <a href="mailto:marcgezellig@gmail.com" class="about-ig">
+                        <i class="ri-mail-line" aria-hidden="true"></i>
+                        marcgezellig@gmail.com
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -325,11 +360,25 @@
             <p class="section-lead">Parlons doublage, voix off ou personnages — je suis à l’écoute.</p>
         </div>
         <div class="contact-cards">
+            <a href="mailto:marcgezellig@gmail.com" class="contact-card">
+                <i class="ri-mail-line" aria-hidden="true"></i>
+                <div>
+                    <span class="contact-label">Email</span>
+                    <strong>marcgezellig@gmail.com</strong>
+                </div>
+            </a>
             <a href="https://www.instagram.com/marcgezellig/" target="_blank" rel="noopener" class="contact-card">
                 <i class="ri-instagram-line" aria-hidden="true"></i>
                 <div>
                     <span class="contact-label">Instagram</span>
                     <strong>@marcgezellig</strong>
+                </div>
+            </a>
+            <a href="https://www.castingcall.club/m/marcgezellig" target="_blank" rel="noopener" class="contact-card">
+                <i class="ri-mic-2-line" aria-hidden="true"></i>
+                <div>
+                    <span class="contact-label">Casting Call Club</span>
+                    <strong>marcgezellig</strong>
                 </div>
             </a>
         </div>
@@ -348,9 +397,17 @@
                 <a href="#a-propos">À propos</a>
                 <a href="#contact">Contact</a>
             </nav>
-            <a href="https://www.instagram.com/marcgezellig/" target="_blank" rel="noopener" class="footer-ig" aria-label="Instagram">
-                <i class="ri-instagram-line" aria-hidden="true"></i>
-            </a>
+            <div class="footer-socials">
+                <a href="mailto:marcgezellig@gmail.com" class="footer-ig" aria-label="Email">
+                    <i class="ri-mail-line" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.instagram.com/marcgezellig/" target="_blank" rel="noopener" class="footer-ig" aria-label="Instagram">
+                    <i class="ri-instagram-line" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.castingcall.club/m/marcgezellig" target="_blank" rel="noopener" class="footer-ig" aria-label="Casting Call Club">
+                    <i class="ri-mic-2-line" aria-hidden="true"></i>
+                </a>
+            </div>
         </div>
         <p class="footer-copy">© 2026 Marc Gezellig</p>
     </footer>

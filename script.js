@@ -34,6 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     initJardinVocal();
+    initDemoPlayer();
     initReveal();
 });
 
@@ -42,6 +43,55 @@ function formatAudioTime(seconds) {
     const m = Math.floor(seconds / 60);
     const s = Math.floor(seconds % 60);
     return m + ':' + s.toString().padStart(2, '0');
+}
+
+function initDemoPlayer() {
+    const audio = document.getElementById('demoAudio');
+    const toggle = document.getElementById('demoToggle');
+    const progress = document.getElementById('demoProgress');
+    const track = document.getElementById('demoTrack');
+    const timeEl = document.getElementById('demoTime');
+    if (!audio || !toggle) return;
+
+    function setIcon(playing) {
+        const icon = toggle.querySelector('i');
+        if (icon) icon.className = playing ? 'ri-pause-fill' : 'ri-play-fill';
+    }
+
+    toggle.addEventListener('click', async function () {
+        if (audio.paused) {
+            try {
+                await audio.play();
+                setIcon(true);
+            } catch (err) {
+                console.warn('Lecture démo impossible', err);
+            }
+        } else {
+            audio.pause();
+            setIcon(false);
+        }
+    });
+
+    audio.addEventListener('timeupdate', function () {
+        if (progress && audio.duration && isFinite(audio.duration)) {
+            progress.style.width = (audio.currentTime / audio.duration) * 100 + '%';
+        }
+        if (timeEl) timeEl.textContent = formatAudioTime(audio.currentTime);
+    });
+
+    audio.addEventListener('ended', function () {
+        setIcon(false);
+        if (progress) progress.style.width = '0%';
+        if (timeEl && audio.duration) timeEl.textContent = formatAudioTime(audio.duration);
+    });
+
+    if (track) {
+        track.addEventListener('click', function (e) {
+            if (!audio.duration || !isFinite(audio.duration)) return;
+            const rect = track.getBoundingClientRect();
+            audio.currentTime = ((e.clientX - rect.left) / rect.width) * audio.duration;
+        });
+    }
 }
 
 function initJardinVocal() {
