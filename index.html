@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Marc Gezellig — Comédien français spécialisé en doublage. Voix off, personnages, narration et publicité.">
+    <meta name="keywords" content="Marc Gezellig, comédien, doublage, voix off, voice artist, narration, personnages, publicité">
+    <meta name="author" content="Marc Gezellig">
+    <meta property="og:title" content="Marc Gezellig — Voice Artist">
+    <meta property="og:description" content="Comédien français spécialisé en doublage. Une voix, plusieurs univers.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/marc-gezellig.png">
+    <title>Marc Gezellig — Voice Artist | Comédien doublage & voix off</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              cream: '#F3EBDD',
+              sage: '#7A8F6A',
+              terracotta: '#C45C3E',
+              soleil: '#E4A820',
+              deep: '#1F3A2E',
+              petal: '#D4788A'
+            },
+            fontFamily: {
+              display: ['Fraunces', 'Georgia', 'serif'],
+              sans: ['Manrope', 'system-ui', 'sans-serif']
+            }
+          }
+        }
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-sans">
+
+    <nav class="site-nav fixed top-0 w-full z-50" aria-label="Navigation principale">
+        <div class="nav-inner">
+            <a href="#accueil" class="logo font-display">Marc Gezellig</a>
+            <div class="hidden md:flex items-center gap-8">
+                <a href="#accueil" class="nav-link">Accueil</a>
+                <a href="#jardin" class="nav-link">Jardin vocal</a>
+                <a href="#univers" class="nav-link">Univers</a>
+                <a href="#a-propos" class="nav-link">À propos</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="https://www.instagram.com/marcgezellig/" target="_blank" rel="noopener" class="nav-social" aria-label="Instagram Marc Gezellig">
+                    <i class="ri-instagram-line" aria-hidden="true"></i>
+                </a>
+                <a href="#jardin" class="nav-cta">Écouter</a>
+            </div>
+            <button id="menuBtn" class="md:hidden menu-btn" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobileMenu">
+                <i class="ri-menu-line ri-lg" aria-hidden="true"></i>
+            </button>
+        </div>
+        <div id="mobileMenu" class="hidden md:hidden site-nav-mobile">
+            <a href="#accueil">Accueil</a>
+            <a href="#jardin">Jardin vocal</a>
+            <a href="#univers">Univers</a>
+            <a href="#a-propos">À propos</a>
+            <a href="#contact">Contact</a>
+            <a href="https://www.instagram.com/marcgezellig/" target="_blank" rel="noopener" class="mobile-ig">
+                <i class="ri-instagram-line" aria-hidden="true"></i> Instagram
+            </a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header id="accueil" class="hero">
+        <div class="hero-bg" aria-hidden="true">
+            <svg class="hero-blob hero-blob-1" viewBox="0 0 600 600" fill="none"><path d="M420 90c80 40 140 140 120 230s-130 150-230 170-200-40-230-130 40-210 140-250 200-60 200-20z" fill="currentColor"/></svg>
+            <svg class="hero-blob hero-blob-2" viewBox="0 0 400 400" fill="none"><path d="M280 40c60 30 90 110 70 170s-100 90-170 90-120-50-120-110 50-140 120-160 100-20 100 10z" fill="currentColor"/></svg>
+            <div class="hero-waveforms" aria-hidden="true">
+                <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <svg class="hero-leaf hero-leaf-a" viewBox="0 0 80 120" fill="none" aria-hidden="true">
+                <path d="M40 110 C10 70 8 30 40 8 C72 30 70 70 40 110Z" stroke="currentColor" stroke-width="2.5" fill="currentColor" fill-opacity=".18"/>
+                <path d="M40 108 V20" stroke="currentColor" stroke-width="1.5" opacity=".5"/>
+            </svg>
+            <svg class="hero-leaf hero-leaf-b" viewBox="0 0 80 120" fill="none" aria-hidden="true">
+                <path d="M40 110 C12 75 15 35 40 10 C65 35 68 75 40 110Z" stroke="currentColor" stroke-width="2.5" fill="currentColor" fill-opacity=".15"/>
+            </svg>
+            <svg class="hero-flower" viewBox="0 0 100 100" fill="none" aria-hidden="true">
+                <circle cx="50" cy="50" r="8" fill="currentColor"/>
+                <ellipse cx="50" cy="28" rx="12" ry="18" fill="currentColor" opacity=".55"/>
+                <ellipse cx="50" cy="72" rx="12" ry="18" fill="currentColor" opacity=".55"/>
+                <ellipse cx="28" cy="50" rx="18" ry="12" fill="currentColor" opacity=".55"/>
+                <ellipse cx="72" cy="50" rx="18" ry="12" fill="currentColor" opacity=".55"/>
+            </svg>
+        </div>
+
+        <div class="hero-content">
+            <p class="hero-kicker">Comédien français spécialisé en doublage.</p>
+            <h1 class="hero-brand font-display">
+                <span class="brand-marc">MARC</span>
+                <span class="brand-gezellig">GEZELLIG</span>
+            </h1>
+            <p class="hero-tagline">Une voix, plusieurs univers.</p>
+            <p class="hero-subtitle">Voix off • Doublage • Personnages • Narration • Publicité</p>
+            <div class="hero-actions">
+                <a href="#jardin" class="btn-primary">
+                    <span class="btn-play" aria-hidden="true">▶</span> Écouter ma voix
+                </a>
+                <a href="#univers" class="btn-secondary">Découvrir mes univers</a>
+            </div>
+        </div>
+
+        <aside class="hero-portrait" aria-label="Portrait de Marc Gezellig">
+            <div class="portrait-frame">
+                <img src="images/marc-gezellig.png" alt="Marc Gezellig, comédien voix off" width="640" height="640" fetchpriority="high">
+            </div>
+            <div class="portrait-caption">
+                <span class="waveform-mini" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+                Voice Artist
+            </div>
+        </aside>
+    </header>
+
+    <!-- JARDIN VOCAL -->
+    <section id="jardin" class="jardin-section">
+        <div class="section-head">
+            <p class="section-eyebrow">Signature</p>
+            <h2 class="font-display">Le Jardin vocal de Marc Gezellig</h2>
+            <p class="section-lead">Chaque fleur, une facette de ma voix. Cliquez pour écouter la démo correspondante.</p>
+        </div>
+
+        <div class="jardin-stage" id="jardinStage" role="list">
+            <!-- flowers injected / static -->
+            <button type="button" class="garden-flower" role="listitem" data-demo="naturel" data-src="audio/magie.mp3" style="--x:18%; --y:62%; --delay:.05s" aria-label="Écouter : Naturel">
+                <span class="flower-visual" aria-hidden="true">
+                    <svg viewBox="0 0 120 140"><g fill="none" stroke-linecap="round">
+                        <path d="M60 130 V70" stroke="#5F7A52" stroke-width="3"/>
+                        <path d="M60 100 C40 90 30 75 35 60" stroke="#5F7A52" stroke-width="2"/>
+                        <ellipse cx="60" cy="48" rx="14" ry="22" fill="#E8C76A" stroke="#C9A84A" stroke-width="1.5"/>
+                        <ellipse cx="42" cy="58" rx="14" ry="20" fill="#F0D78A" stroke="#C9A84A" stroke-width="1.5" transform="rotate(-35 42 58)"/>
+                        <ellipse cx="78" cy="58" rx="14" ry="20" fill="#F0D78A" stroke="#C9A84A" stroke-width="1.5" transform="rotate(35 78 58)"/>
+                        <ellipse cx="48" cy="38" rx="12" ry="18" fill="#E2BC55" stroke="#C9A84A" stroke-width="1.5" transform="rotate(-20 48 38)"/>
+                        <ellipse cx="72" cy="38" rx="12" ry="18" fill="#E2BC55" stroke="#C9A84A" stroke-width="1.5" transform="rotate(20 72 38)"/>
+                        <circle cx="60" cy="52" r="10" fill="#C45C3E"/>
+                    </g></svg>
+                </span>
+                <span class="flower-label"><strong>Naturel</strong><em>chaleureux, spontané, conversationnel</em></span>
+            </button>
+
+            <button type="button" class="garden-flower" role="listitem" data-demo="energique" data-src="audio/play-and-vibes.mp3" style="--x:38%; --y:28%; --delay:.12s" aria-label="Écouter : Énergique">
+                <span class="flower-visual" aria-hidden="true">
+                    <svg viewBox="0 0 120 140"><g>
+                        <path d="M60 130 V72" stroke="#5F7A52" stroke-width="3" fill="none"/>
+                        <g transform="translate(60 55)">
+                            <circle r="12" fill="#E4A820"/>
+                            <g fill="#E4A820" opacity=".9">
+                                <ellipse rx="8" ry="22" transform="rotate(0)"/><ellipse rx="8" ry="22" transform="rotate(45)"/>
+                                <ellipse rx="8" ry="22" transform="rotate(90)"/><ellipse rx="8" ry="22" transform="rotate(135)"/>
+                            </g>
+                            <circle r="7" fill="#C45C3E"/>
+                        </g>
+                    </g></svg>
+                </span>
+                <span class="flower-label"><strong>Énergique</strong><em>dynamique, souriant, publicitaire</em></span>
+            </button>
+
+            <button type="button" class="garden-flower" role="listitem" data-demo="narration" data-src="audio/cowboy.mp3" style="--x:58%; --y:55%; --delay:.18s" aria-label="Écouter : Narration">
+                <span class="flower-visual" aria-hidden="true">
+                    <svg viewBox="0 0 120 140"><g fill="none">
+                        <path d="M60 130 C55 100 48 85 40 55" stroke="#5F7A52" stroke-width="3"/>
+                        <path d="M42 70 C55 68 70 55 78 40" stroke="#7A8F6A" stroke-width="2.5" fill="#7A8F6A" fill-opacity=".35"/>
+                        <path d="M38 55 C20 50 15 30 28 18 C40 12 52 28 42 45Z" fill="#6B8560" stroke="#4F6A45" stroke-width="1.5"/>
+                        <path d="M48 48 C55 28 75 22 82 38 C78 55 58 58 48 48Z" fill="#8FA67C" stroke="#5F7A52" stroke-width="1.5"/>
+                    </g></svg>
+                </span>
+                <span class="flower-label"><strong>Narration</strong><em>posé, immersif, storytelling</em></span>
+            </button>
+
+            <button type="button" class="garden-flower" role="listitem" data-demo="personnages" data-src="audio/magie2.mp3" style="--x:72%; --y:30%; --delay:.22s" aria-label="Écouter : Personnages">
+                <span class="flower-visual" aria-hidden="true">
+                    <svg viewBox="0 0 120 140"><g>
+                        <path d="M60 130 V68" stroke="#5F7A52" stroke-width="3" fill="none"/>
+                        <ellipse cx="60" cy="42" rx="11" ry="18" fill="#D4788A" stroke="#B85F72" stroke-width="1.5"/>
+                        <ellipse cx="42" cy="52" rx="11" ry="16" fill="#E08A9A" stroke="#B85F72" stroke-width="1.5" transform="rotate(-40 42 52)"/>
+                        <ellipse cx="78" cy="52" rx="11" ry="16" fill="#E08A9A" stroke="#B85F72" stroke-width="1.5" transform="rotate(40 78 52)"/>
+                        <ellipse cx="48" cy="68" rx="11" ry="15" fill="#C96B7E" stroke="#B85F72" stroke-width="1.5" transform="rotate(-15 48 68)"/>
+                        <ellipse cx="72" cy="68" rx="11" ry="15" fill="#C96B7E" stroke="#B85F72" stroke-width="1.5" transform="rotate(15 72 68)"/>
+                        <circle cx="60" cy="55" r="9" fill="#F3EBDD" stroke="#C45C3E" stroke-width="1.5"/>
+                    </g></svg>
+                </span>
+                <span class="flower-label"><strong>Personnages</strong><em>interprétation, animation, doublage</em></span>
+            </button>
+
+            <button type="button" class="garden-flower" role="listitem" data-demo="dramatique" data-src="audio/apocalypse.mp3" style="--x:22%; --y:22%; --delay:.28s" aria-label="Écouter : Dramatique">
+                <span class="flower-visual" aria-hidden="true">
+                    <svg viewBox="0 0 120 140"><g>
+                        <path d="M60 130 V75" stroke="#4A5E42" stroke-width="3" fill="none"/>
+                        <path d="M48 55 C35 40 38 22 52 28 C58 18 72 22 70 38 C82 42 78 62 62 58 C55 70 42 65 48 55Z" fill="#A84A32" stroke="#7A3424" stroke-width="1.5"/>
+                        <path d="M55 48 C50 35 62 30 65 42" fill="#C45C3E" stroke="none"/>
+                    </g></svg>
+                </span>
+                <span class="flower-label"><strong>Dramatique</strong><em>émotion, tension, intensité</em></span>
+            </button>
+
+            <button type="button" class="garden-flower" role="listitem" data-demo="doux" data-src="audio/reveil-digital.mp3" style="--x:48%; --y:78%; --delay:.32s" aria-label="Écouter : Doux">
+                <span class="flower-visual" aria-hidden="true">
+                    <svg viewBox="0 0 120 140"><g fill="none">
+                        <path d="M60 130 V80" stroke="#7A8F6A" stroke-width="2.5"/>
+                        <circle cx="48" cy="70" r="14" fill="#A8C090" opacity=".7"/>
+                        <circle cx="68" cy="62" r="16" fill="#8FA67C" opacity=".75"/>
+                        <circle cx="58" cy="48" r="12" fill="#B5CFA0" opacity=".8"/>
+                        <path d="M55 80 C40 70 42 50 58 45" stroke="#5F7A52" stroke-width="1.5"/>
+                    </g></svg>
+                </span>
+                <span class="flower-label"><strong>Doux</strong><em>calme, proximité, intimité</em></span>
+            </button>
+
+            <button type="button" class="garden-flower" role="listitem" data-demo="comique" data-src="audio/grumpy-wasteland.mp3" style="--x:82%; --y:68%; --delay:.38s" aria-label="Écouter : Comique / décalé">
+                <span class="flower-visual" aria-hidden="true">
+                    <svg viewBox="0 0 120 140"><g>
+                        <path d="M60 130 V70" stroke="#5F7A52" stroke-width="3" fill="none"/>
+                        <ellipse cx="60" cy="48" rx="28" ry="22" fill="#E4A820" stroke="#C48A10" stroke-width="1.5"/>
+                        <circle cx="50" cy="46" r="3" fill="#1F3A2E"/>
+                        <circle cx="70" cy="46" r="3" fill="#1F3A2E"/>
+                        <path d="M48 56 Q60 66 72 56" stroke="#1F3A2E" stroke-width="2" fill="none"/>
+                        <path d="M35 38 L28 28 M85 38 L92 28" stroke="#C45C3E" stroke-width="2.5" stroke-linecap="round"/>
+                    </g></svg>
+                </span>
+                <span class="flower-label"><strong>Comique / décalé</strong><em>exagération, personnages et humour</em></span>
+            </button>
+
+            <button type="button" class="garden-flower" role="listitem" data-demo="gaming" data-src="audio/contact-et-reseaux.mp3" style="--x:88%; --y:42%; --delay:.44s" aria-label="Écouter : Gaming / animation">
+                <span class="flower-visual" aria-hidden="true">
+                    <svg viewBox="0 0 120 140"><g>
+                        <path d="M60 130 V78" stroke="#5F7A52" stroke-width="3" fill="none"/>
+                        <rect x="38" y="40" width="44" height="30" rx="10" fill="#3D6B8A" stroke="#2A4F68" stroke-width="1.5"/>
+                        <circle cx="50" cy="55" r="4" fill="#E4A820"/>
+                        <circle cx="70" cy="55" r="4" fill="#C45C3E"/>
+                        <path d="M58 48 h8 M62 44 v8" stroke="#F3EBDD" stroke-width="2"/>
+                        <path d="M48 95 C35 85 55 70 60 78 C65 70 85 85 72 95Z" fill="#7A8F6A" opacity=".5"/>
+                    </g></svg>
+                </span>
+                <span class="flower-label"><strong>Gaming / animation</strong><em>personnages et univers fictifs</em></span>
+            </button>
+
+            <div class="jardin-soil" aria-hidden="true"></div>
+        </div>
+
+        <div class="jardin-player" id="jardinPlayer" hidden>
+            <button type="button" class="jardin-player-toggle" id="jardinToggle" aria-label="Lecture / pause">
+                <i class="ri-pause-fill" aria-hidden="true"></i>
+            </button>
+            <div class="jardin-player-meta">
+                <p class="jardin-player-title" id="jardinTitle">—</p>
+                <p class="jardin-player-desc" id="jardinDesc"></p>
+                <div class="audio-progress-track" id="jardinTrack"><div class="audio-progress" id="jardinProgress"></div></div>
+            </div>
+            <span class="audio-time" id="jardinTime">0:00</span>
+            <audio id="jardinAudio" preload="metadata"></audio>
+        </div>
+    </section>
+
+    <!-- UNIVERS -->
+    <section id="univers" class="univers-section">
+        <div class="section-head">
+            <p class="section-eyebrow">Range vocale</p>
+            <h2 class="font-display">Mes univers</h2>
+            <p class="section-lead">Du doublage au spot pub, chaque projet trouve sa couleur dans le jardin.</p>
+        </div>
+        <div class="univers-grid">
+            <article class="univers-item">
+                <span class="univers-icon" aria-hidden="true"><i class="ri-mic-2-line"></i></span>
+                <h3>Voix off</h3>
+                <p>Institutionnel, web, documentaire — une présence claire et incarnée.</p>
+            </article>
+            <article class="univers-item">
+                <span class="univers-icon" aria-hidden="true"><i class="ri-film-line"></i></span>
+                <h3>Doublage</h3>
+                <p>Comédien français spécialisé en doublage, au service du jeu et du rythme.</p>
+            </article>
+            <article class="univers-item">
+                <span class="univers-icon" aria-hidden="true"><i class="ri-user-voice-line"></i></span>
+                <h3>Personnages</h3>
+                <p>Animation, fiction, gaming — des voix qui font exister des mondes.</p>
+            </article>
+            <article class="univers-item">
+                <span class="univers-icon" aria-hidden="true"><i class="ri-book-open-line"></i></span>
+                <h3>Narration</h3>
+                <p>Storytelling immersif, posé ou tendu selon l’histoire à raconter.</p>
+            </article>
+            <article class="univers-item">
+                <span class="univers-icon" aria-hidden="true"><i class="ri-megaphone-line"></i></span>
+                <h3>Publicité</h3>
+                <p>Énergie, sourire et punch — la voix qui accroche en quelques secondes.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- À PROPOS -->
+    <section id="a-propos" class="about-section">
+        <div class="about-grid">
+            <div class="about-photo">
+                <img src="images/marc-gezellig.png" alt="Marc Gezellig souriant" width="560" height="560" loading="lazy">
+                <div class="about-photo-deco" aria-hidden="true"></div>
+            </div>
+            <div class="about-copy">
+                <p class="section-eyebrow">À propos</p>
+                <h2 class="font-display">Marc Gezellig</h2>
+                <p class="about-identity">Comédien français spécialisé en doublage.</p>
+                <p>Gezellig, c’est cette chaleur néerlandaise : le plaisir d’être ensemble, une voix qui accueille. Derrière le micro, je cultive des univers — du naturel conversationnel au personnage le plus décalé.</p>
+                <p>Mon travail : donner du corps aux histoires, coller au jeu, et laisser une empreinte humaine dans chaque prise.</p>
+                <a href="https://www.instagram.com/marcgezellig/" target="_blank" rel="noopener" class="about-ig">
+                    <i class="ri-instagram-line" aria-hidden="true"></i>
+                    @marcgezellig
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact-section">
+        <div class="section-head">
+            <p class="section-eyebrow">Collaborer</p>
+            <h2 class="font-display">Une voix pour votre projet ?</h2>
+            <p class="section-lead">Parlons doublage, voix off ou personnages — je suis à l’écoute.</p>
+        </div>
+        <div class="contact-cards">
+            <a href="https://www.instagram.com/marcgezellig/" target="_blank" rel="noopener" class="contact-card">
+                <i class="ri-instagram-line" aria-hidden="true"></i>
+                <div>
+                    <span class="contact-label">Instagram</span>
+                    <strong>@marcgezellig</strong>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <p class="font-display footer-name">Marc Gezellig — Voice Artist</p>
+                <p class="footer-tag">Comédien français spécialisé en doublage.</p>
+                <p class="footer-signature">Des voix à cultiver, des histoires à raconter. 🌱</p>
+            </div>
+            <nav class="footer-nav" aria-label="Liens pied de page">
+                <a href="#jardin">Jardin vocal</a>
+                <a href="#univers">Univers</a>
+                <a href="#a-propos">À propos</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <a href="https://www.instagram.com/marcgezellig/" target="_blank" rel="noopener" class="footer-ig" aria-label="Instagram">
+                <i class="ri-instagram-line" aria-hidden="true"></i>
+            </a>
+        </div>
+        <p class="footer-copy">© 2026 Marc Gezellig</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
